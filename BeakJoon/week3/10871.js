@@ -1,5 +1,3 @@
-const { resourceLimits } = require("worker_threads");
-
 const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
 let input = require("fs").readFileSync(filePath,'utf8').trim().split(/\s+/);
 
